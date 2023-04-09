@@ -6,14 +6,12 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Helpers;
+using System.Web.WebPages;
 
 namespace LeetCode
 {
-    class A
-    {
-        private int a;
-    }
-    class Program : A
+  
+    class Program
     {
         static void Main(string[] args)
         {
@@ -61,6 +59,27 @@ namespace LeetCode
             //LinkedListAddTwoNumbers linkedlist = new LinkedListAddTwoNumbers();
             //linkedlist.AddTwoNumbers(l1,l2); 
             #endregion
+            SortedInsertedPosition sortedInsertedPosition = new SortedInsertedPosition();
+            List<int> A = new List<int> { 1, 2,4 };
+            int B = 3;
+           // Console.WriteLine(sortedInsertedPosition.searchInsert(A, B));
+            string b = " ";
+            //RabinKarp rabinKarp = new RabinKarp();
+            //rabinKarp.solve("abababababababab", "");
+            //Console.WriteLine( b.Trim().Length);
+            //BoringSubstring bs = new BoringSubstring();
+            //Console.WriteLine(bs.solve("wwuvuw"));
+            SpecialIndex special = new SpecialIndex();
+            //int[] a = new int[] { 1, 2, };
+            Console.WriteLine(special.WaysToMakeFair(new int[] { 2,1,6,4 }));
+            ContinousSumQuery continousSumQuery = new ContinousSumQuery();
+            var query = new List<List<int>>();
+            
+            query.Add(new List<int> { 1, 2, 10 });
+            query.Add(new List<int> { 2, 3, 20 });
+            query.Add(new List<int> { 2, 5, 25 });
+            Console.WriteLine(continousSumQuery.solve(5,query));
+
 
             Console.Read();
         }
